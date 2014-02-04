@@ -6,7 +6,6 @@ import com.mycompany.promocalculator.Discount;
 import com.mycompany.promocalculator.Shop;
 
 public class PromoList implements Command {
-
 	@Override
 	public boolean execute(Shop shop) {
 		boolean successful_execution = false;

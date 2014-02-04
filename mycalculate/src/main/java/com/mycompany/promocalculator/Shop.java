@@ -2,6 +2,7 @@ package com.mycompany.promocalculator;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -39,6 +40,10 @@ public class Shop {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		if (args.length<3){
+			System.out.println("Need parameters: pricelist.xml discount.xml invoice.xml ");
+			args= new String[]{"fakename.xml","fakename.xml","fakename.xml"};
+		}		
 		shop = new Shop();
 		shop.init(args);
 		shop.state = Shop.START;
@@ -56,8 +61,7 @@ public class Shop {
 	private void readCommand() {
 		System.out.print("Input command:");
 		try {
-			BufferedReader bufferRead = new BufferedReader(
-					new InputStreamReader(System.in));
+			BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
 			String s = bufferRead.readLine();
 			System.out.println(s);
 			CommandFactory.getInstance().createCommand(s).execute(shop);
@@ -71,8 +75,7 @@ public class Shop {
 
 		Iterator<Invoice> i = invoicesList.iterator();
 		try {
-			DocumentBuilderFactory docFactory = DocumentBuilderFactory
-					.newInstance();
+			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder;
 			docBuilder = docFactory.newDocumentBuilder();
 			// root elements
@@ -89,26 +92,20 @@ public class Shop {
 				Iterator<String> producNames = invoice.getProductNames();
 				while (producNames.hasNext()) {
 					String pName = producNames.next().toString();
-					Integer productQuantity = new Integer(
-							invoice.getProductQuantity(pName));
-					System.out.print("Shop.invoiceCalculate() " + pName + " "
-							+ productQuantity + " " + priceList.getPrice(pName)
-							+ "  ");
-					System.out.format(" %1$.2f %n", priceList.getPrice(pName)
-							* productQuantity);
+					Integer productQuantity = new Integer(invoice.getProductQuantity(pName));
+					System.out.print("Shop.invoiceCalculate() " + pName + " " + productQuantity + " " + priceList.getPrice(pName) + "  ");
+					System.out.format(" %1$.2f %n", priceList.getPrice(pName) * productQuantity);
 					Element newProduct = doc.createElement("product");
 					newInvoice.appendChild(newProduct);
 					Element name = doc.createElement("name");
 					name.appendChild(doc.createTextNode(pName));
 					newProduct.appendChild(name);
 					Element quantity = doc.createElement("quantity");
-					quantity.appendChild(doc.createTextNode(productQuantity
-							.toString()));
+					quantity.appendChild(doc.createTextNode(productQuantity.toString()));
 					newProduct.appendChild(quantity);
 
 					Element oldPrice = doc.createElement("oldprice");
-					oldPrice.appendChild(doc.createTextNode(""
-							+ priceList.getPrice(pName) * productQuantity));
+					oldPrice.appendChild(doc.createTextNode("" + priceList.getPrice(pName) * productQuantity));
 					newProduct.appendChild(oldPrice);
 					resultSum += (priceList.getPrice(pName) * productQuantity);
 				}
@@ -116,8 +113,7 @@ public class Shop {
 
 			}
 			// write the content into xml file
-			TransformerFactory transformerFactory = TransformerFactory
-					.newInstance();
+			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
 			DOMSource source = new DOMSource(doc);
 			StreamResult result = new StreamResult(new File("result.xml"));
@@ -138,26 +134,30 @@ public class Shop {
 	}
 
 	private PriceList getPriceList(String priceFile) {
-		File fXmlFile = new File(priceFile);
+		PriceList prList = new PriceList();
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder;
-		PriceList prList = new PriceList();
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(fXmlFile);
-			// doc.getDocumentElement().normalize();
+			Document doc = null;
+			try {
+				File fXmlFile = new File(priceFile);
+				doc = dBuilder.parse(fXmlFile);
+			} catch (FileNotFoundException fnf) {
+				fnf.printStackTrace();
+				doc = dBuilder.parse(ClassLoader.getSystemResourceAsStream("pricelist.xml"));
+				System.out.println("Error getting pricelist file - Loaded default pricelist.xml");
+			}
+			doc.getDocumentElement().normalize();
 			NodeList productList = doc.getElementsByTagName("product");
 			for (int i = 0; i < productList.getLength(); i++) {
 				Node nNode = productList.item(i);
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element eElement = (Element) nNode;
 					Product p = new Product();
-					p.setName(eElement.getElementsByTagName("name").item(0)
-							.getTextContent());
-					p.setGroup(eElement.getElementsByTagName("group").item(0)
-							.getTextContent());
-					p.setPrice(new Float(eElement.getElementsByTagName("price")
-							.item(0).getTextContent()));
+					p.setName(eElement.getElementsByTagName("name").item(0).getTextContent());
+					p.setGroup(eElement.getElementsByTagName("group").item(0).getTextContent());
+					p.setPrice(new Float(eElement.getElementsByTagName("price").item(0).getTextContent()));
 					prList.addProduct(p.getName(), p.getPrice(), p.getGroup());
 				}
 				;
@@ -170,21 +170,28 @@ public class Shop {
 	}
 
 	private ArrayList<Discount> getDiscountList(String promoFile) {
-		File fXmlFile = new File(promoFile);
+
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder;
 		ArrayList<Discount> promList = new ArrayList<Discount>();
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(fXmlFile);
+			Document doc = null;
+			try {
+				File fXmlFile = new File(promoFile);
+				doc = dBuilder.parse(fXmlFile);
+			} catch (FileNotFoundException fnf) {
+				fnf.printStackTrace();
+				doc = dBuilder.parse(ClassLoader.getSystemResourceAsStream("discount.xml"));
+				System.out.println("Error getting discount file - Loaded default discount.xml");
+			}
 			doc.getDocumentElement().normalize();
 			NodeList promoNodeList = doc.getElementsByTagName("promotion");
 			for (int i = 0; i < promoNodeList.getLength(); i++) {
 				Node nNode = promoNodeList.item(i);
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element eElement = (Element) nNode;
-					promList.add(DiscountFactory.getInstance().discountParser(
-							eElement));
+					promList.add(DiscountFactory.getInstance().discountParser(eElement));
 				}
 				;
 			}
@@ -196,14 +203,22 @@ public class Shop {
 	}
 
 	private ArrayList<Invoice> getInvoiceList(String invoicesFile) {
-		File fXmlFile = new File(invoicesFile);
+
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder;
 		ArrayList<Invoice> invList = new ArrayList<Invoice>();
 		try {
 			dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(fXmlFile);
-			// doc.getDocumentElement().normalize();
+			Document doc = null;
+			try {
+				File fXmlFile = new File(invoicesFile);
+				doc = dBuilder.parse(fXmlFile);
+			} catch (FileNotFoundException fnf) {
+				fnf.printStackTrace();
+				doc = dBuilder.parse(ClassLoader.getSystemResourceAsStream("invoices.xml"));
+				System.out.println("Error getting invoice file - Loaded default invoices.xml");
+			}
+			doc.getDocumentElement().normalize();
 			NodeList productList = doc.getElementsByTagName("invoice");
 			System.out.println("invoices  " + productList.getLength());
 			for (int i = 0; i < productList.getLength(); i++) {
@@ -211,11 +226,8 @@ public class Shop {
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element eElement = (Element) nNode;
 					Invoice temp = new Invoice();
-					for (int k = 0; k < eElement.getElementsByTagName("name")
-							.getLength(); k++) {
-						temp.addProduct(eElement.getElementsByTagName("name")
-								.item(k).getTextContent(), new Integer(eElement
-								.getElementsByTagName("quantity").item(k)
+					for (int k = 0; k < eElement.getElementsByTagName("name").getLength(); k++) {
+						temp.addProduct(eElement.getElementsByTagName("name").item(k).getTextContent(), new Integer(eElement.getElementsByTagName("quantity").item(k)
 								.getTextContent()));
 					}
 					invList.add(temp);

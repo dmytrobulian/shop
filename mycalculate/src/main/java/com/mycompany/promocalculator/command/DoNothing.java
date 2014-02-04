@@ -6,6 +6,7 @@ public class DoNothing implements Command {
 
 	@Override
 	public boolean execute(Shop shop) {
+		// TODO Auto-generated method stub
 		return true;
 	}
 }
