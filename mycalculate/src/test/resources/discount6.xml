@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<list>	
+	<promotion>
+		<discountName>common sum 60  common bonus 10%  for each 2nd</discountName>
+		<discountCondition>
+			<grouplist/>									
+			<productlist/>				
+			<common>				
+				<condition>
+					<type>percent</type>
+					<amount>10</amount>
+					<quantity>2</quantity>
+				</condition>
+			</common>			
+		</discountCondition>
+		<validation>
+			<grouplist/>
+			<productlist/>
+			<common>
+				<condition>
+					<amount>60</amount>
+					<quantity>0</quantity>
+				</condition>
+			</common>
+		</validation>
+	</promotion>	
+</list>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<list>
+	<invoice>
+		<product>
+			<name>milk</name>
+			<quantity>3</quantity>
+		</product>
+		<product>
+			<name>pen</name>
+			<quantity>2</quantity>
+		</product>
+		<product>
+			<name>sugar</name>
+			<quantity>1</quantity>
+		</product>
+	</invoice>
+	<invoice>
+		<product>
+			<name>wine</name>
+			<quantity>2</quantity>
+		</product>
+		<product>
+			<name>beer</name>
+			<quantity>3</quantity>
+		</product>
+	</invoice>
+	<invoice>	
+		<product>
+			<name>paper notes</name>
+			<quantity>4</quantity>
+		</product>
+		<product>
+			<name>gloves</name>
+			<quantity>2</quantity>
+		</product>
+	</invoice>		
+</list>

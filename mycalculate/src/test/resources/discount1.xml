@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<list>
+	<promotion>
+		<discountName>group A each 2nd 10%</discountName>
+		<discountCondition>
+			<grouplist>				
+				<group>
+					<name>a</name>
+					<quantity>2</quantity>
+					<type>percent</type>
+					<amount>10</amount>
+				</group>				
+			</grouplist>							
+			<productlist>				
+			</productlist>
+			<common/>
+		</discountCondition>
+		<validation>
+			<grouplist>		
+				<group>
+					<name>a</name>
+					<quantity>0</quantity>
+					<amount>10</amount>
+				</group>
+			</grouplist>
+			<productlist/>
+			<common/>
+		</validation>
+	</promotion>	
+		
+</list>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<list>		
+	<invoice>
+		<product>		
+			<name>milk</name>
+			<quantity>5</quantity>
+		</product>
+		<product>		
+			<name>hammer</name>
+			<quantity>3</quantity>
+		</product>
+		<product>		
+			<name>turn-screw</name>
+			<quantity>2</quantity>
+		</product>
+		<product>		
+			<name>paper notes</name>
+			<quantity>1</quantity>
+		</product>		
+	</invoice>
+</list>
