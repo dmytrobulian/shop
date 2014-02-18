@@ -1,10 +1,12 @@
 package com.mycompany.promocalculator;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 public class Product {
 	private String name;
 	private String group;
 	private Float price;
-
+	@XmlElement
 	public String getName() {
 		return name;
 	}
@@ -12,7 +14,7 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	@XmlTransient
 	public String getGroup() {
 		return group;
 	}
@@ -20,7 +22,7 @@ public class Product {
 	public void setGroup(String group) {
 		this.group = group;
 	}
-
+	@XmlElement
 	public Float getPrice() {
 		return price;
 	}

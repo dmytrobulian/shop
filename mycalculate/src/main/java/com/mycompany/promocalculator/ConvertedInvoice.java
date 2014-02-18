@@ -6,6 +6,15 @@ import java.util.Iterator;
 public class ConvertedInvoice {
 	private ArrayList<ProductWithChanges> invoice;
 	private ArrayList<DiscountActionDescription> changes = new ArrayList<DiscountActionDescription>();
+	private final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(this.getClass());
+	private String name;
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public ArrayList<DiscountActionDescription> getChanges() {
 		return changes;
@@ -39,12 +48,12 @@ public class ConvertedInvoice {
 
 	public ConvertedInvoice(ConvertedInvoice cI) {
 		invoice = new ArrayList<ProductWithChanges>();
+		this.name = cI.getName();
 		Iterator<ProductWithChanges> i = cI.getProducts();
 		while (i.hasNext()) {
 			invoice.add(i.next().clone());
 		}
-		changes = (ArrayList<DiscountActionDescription>) cI.getChanges()
-				.clone();
+		changes = (ArrayList<DiscountActionDescription>) cI.getChanges().clone();
 	}
 
 	public ConvertedInvoice() {
@@ -63,8 +72,7 @@ public class ConvertedInvoice {
 		Iterator<DiscountActionDescription> ic = changes.iterator();
 		while (ic.hasNext()) {
 			DiscountActionDescription dd = ic.next();
-			System.out.println("invoice changes " + dd.getDiscountActionTitle()
-					+ "  " + dd.getActionType() + "  " + dd.getAmountValue());
+			logger.debug("invoice changes {} {} {}",new Object[]{dd.getDiscountActionTitle(), dd.getActionType(), dd.getAmountValue()});
 		}
 	}
 

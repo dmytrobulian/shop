@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<list>
+	<promotion>
+	<discountName>group A common bonus free each third </discountName>
+		<discountCondition>
+			<grouplist/>									
+			<productlist/>				
+			<common>				
+				<condition>
+					<type>percent</type>
+					<amount>100</amount>
+					<quantity>3</quantity>
+				</condition>
+			</common>			
+		</discountCondition>
+		<validation>
+			<grouplist>		
+				<group>
+					<name>a</name>
+					<quantity>1</quantity>
+					<amount>0</amount>
+				</group>
+			</grouplist>
+			<productlist/>
+			<common/>				
+		</validation>
+	</promotion>
+</list>

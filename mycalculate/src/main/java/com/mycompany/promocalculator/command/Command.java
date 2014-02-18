@@ -1,7 +1,12 @@
 package com.mycompany.promocalculator.command;
 
-import com.mycompany.promocalculator.Shop;
+import java.io.IOException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+
+import com.mycompany.promocalculator.Context;
 
 public interface Command {
-	public boolean execute(Shop shop);
+	public String execute(Context context, String []args) throws ParserConfigurationException, TransformerException, IOException;																  
 }

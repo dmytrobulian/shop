@@ -3,11 +3,12 @@ package com.mycompany.promocalculator.validation;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import com.mycompany.promocalculator.Context;
 import com.mycompany.promocalculator.ConvertedInvoice;
 import com.mycompany.promocalculator.ProductWithChanges;
-import com.mycompany.promocalculator.Shop;
 
 public class ValidationGroupName extends ValidationComposite {
+	private final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(this.getClass());
 
 	/*
 	 * product from group exist in invoice
@@ -17,24 +18,20 @@ public class ValidationGroupName extends ValidationComposite {
 	 * )
 	 */
 	@Override
-	public boolean validate(ConvertedInvoice cinvoice, Shop shop) {
+	public boolean validate(ConvertedInvoice cinvoice,  Context context) {
 
 		boolean result = false;
-		ArrayList<String> groupname = (ArrayList<String>) parameter
-				.get("groupname");
-		int quantity = new Integer(parameter.get("quantity").toString())
-				.intValue();
+		ArrayList<String> groupname = (ArrayList<String>) parameter.get("groupname");
+		int quantity = new Integer(parameter.get("quantity").toString()).intValue();
 		int counter = 0;
 		Iterator<ProductWithChanges> ci = cinvoice.getProducts();
 		while (ci.hasNext() && !result) {
 			String pName = ci.next().getProductName();
-			if (groupname.contains(shop.priceList.getGroup(pName))) {
+			if (groupname.contains(context.priceList.getGroup(pName))) {
 				counter++;
 				if (counter >= quantity) {
-					System.out.println("ValidationGroupName.validate() name="
-							+ pName + "   group="
-							+ shop.priceList.getGroup(pName));
-					return validateChilds(cinvoice, shop);
+					logger.debug(" name={}   group={}", pName, context.priceList.getGroup(pName));
+					return validateChilds(cinvoice, context);
 				}
 			}
 		}

@@ -1,0 +1,9 @@
+ INFO : Invoice invoice3 have been removed
+ INFO : List of invoices:
+ INFO : invoice name=invoice1
+ INFO : 		product name=pen quantity=2
+ INFO : 		product name=milk quantity=3
+ INFO : 		product name=sugar quantity=1
+ INFO : invoice name=invoice2
+ INFO : 		product name=wine quantity=2
+ INFO : 		product name=beer quantity=3

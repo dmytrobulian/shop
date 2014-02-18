@@ -4,17 +4,15 @@ public class DiscountActionDescription {
 	private String discountActionTitle;
 	private String actionType;
 	private Float amountValue;
-
+	private final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(this.getClass());
 	public DiscountActionDescription(String title, String type, Float amount) {
 		setDiscountActionTitle(title);
 		setActionType(type);
 		setAmountValue(amount);
 	}
 
-	public void print() {
-		System.out.println("DiscountActionDescription    "
-				+ discountActionTitle + "   type=" + actionType + "  amount="
-				+ amountValue);
+	public String print() {
+		return new String("DiscountActionDescription    " + discountActionTitle + "   type=" + actionType + "  amount=" + amountValue);
 	}
 
 	public String getDiscountActionTitle() {

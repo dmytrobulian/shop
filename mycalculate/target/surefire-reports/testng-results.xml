@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="14" passed="14">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="526" started-at="2014-02-10T12:38:53Z" finished-at="2014-02-10T12:38:54Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="526" started-at="2014-02-10T12:38:53Z" finished-at="2014-02-10T12:38:54Z">
+      <class name="com.mycompany.promocalculator.test.TestValidations">
+        <test-method status="PASS" signature="f()" name="f" is-config="true" duration-ms="18" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="checkValidationAmount()" name="checkValidationAmount" duration-ms="0" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="checkValidationCommonCount()" name="checkValidationCommonCount" duration-ms="0" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="checkValidationGroupAmount()" name="checkValidationGroupAmount" duration-ms="1" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="checkValidationGroupName()" name="checkValidationGroupName" duration-ms="2" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="checkValidationProductAmount()" name="checkValidationProductAmount" duration-ms="1" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="checkValidationProductName()" name="checkValidationProductName" duration-ms="1" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+      </class>
+      <class name="com.mycompany.promocalculator.test.TestCommand">
+        <test-method status="PASS" signature="f()" name="f" is-config="true" duration-ms="15" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="commandsTest()" name="commandsTest" duration-ms="178" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+      </class>
+      <class name="com.mycompany.promocalculator.test.TestCalculation">
+        <test-method status="PASS" signature="test1condition()" name="test1condition" duration-ms="86" started-at="2014-02-10T12:38:53Z" finished-at="2014-02-10T12:38:53Z">
+        </test-method>
+        <test-method status="PASS" signature="test2condition()" name="test2condition" duration-ms="39" started-at="2014-02-10T12:38:53Z" finished-at="2014-02-10T12:38:53Z">
+        </test-method>
+        <test-method status="PASS" signature="test3condition()" name="test3condition" duration-ms="32" started-at="2014-02-10T12:38:53Z" finished-at="2014-02-10T12:38:53Z">
+        </test-method>
+        <test-method status="PASS" signature="test4condition()" name="test4condition" duration-ms="54" started-at="2014-02-10T12:38:53Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="test5condition()" name="test5condition" duration-ms="36" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="test6condition()" name="test6condition" duration-ms="19" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+        <test-method status="PASS" signature="test7condition()" name="test7condition" duration-ms="23" started-at="2014-02-10T12:38:54Z" finished-at="2014-02-10T12:38:54Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

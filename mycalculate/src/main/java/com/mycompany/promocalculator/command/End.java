@@ -1,14 +1,14 @@
 package com.mycompany.promocalculator.command;
 
-import com.mycompany.promocalculator.Shop;
+import com.mycompany.promocalculator.Context;
 
 public class End implements Command {
-
+	private final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(this.getClass());
 	@Override
-	public boolean execute(Shop shop) {
-		boolean successful_execution = false;
-		shop.state = Shop.END;
-		successful_execution = true;
-		return successful_execution;
+	public String execute(Context context, String[] args) {
+		logger.info("Ending program");
+		Context.state = Context.END;		
+		return this.getClass().getName() +" executed";
 	}
+
 }

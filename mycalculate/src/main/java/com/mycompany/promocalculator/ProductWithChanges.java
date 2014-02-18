@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 public class ProductWithChanges {
 	private String productName;
+	private final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(this.getClass());
 	private ArrayList<DiscountActionDescription> changes = new ArrayList<DiscountActionDescription>();
 
 	public void addDiscount(DiscountActionDescription arg0) {
@@ -33,18 +34,16 @@ public class ProductWithChanges {
 	}
 
 	public void printAll() {
-		System.out.println("product=" + productName);
+		logger.debug("product={}",productName);
 		Iterator<DiscountActionDescription> i = changes.iterator();
 		while (i.hasNext()) {
-			System.out.print("		");
-			i.next().print();
+			logger.debug(i.next().print());
 		}
 	}
 
 	public ProductWithChanges clone() {
 		ProductWithChanges product = new ProductWithChanges();
-		product.setChanges((ArrayList<DiscountActionDescription>) this
-				.getChanges().clone());
+		product.setChanges((ArrayList<DiscountActionDescription>) this.getChanges().clone());
 		product.setProductName(this.getProductName());
 		return product;
 	}

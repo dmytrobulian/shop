@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\dmitry.bulyan\AppData\Local\Temp\testng-eclipse--1823814860\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">41 methods,   41 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="addproductIncorrectQuantityTest">addproductIncorrectQuantityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="addproductNotExistingNameTest">addproductNotExistingNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="addproductTest">addproductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="changeDiscountStateFromFileTest">changeDiscountStateFromFileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestValidation" hash-for-method="checkValidationAmount">checkValidationAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestValidation" hash-for-method="checkValidationCommonCount">checkValidationCommonCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestValidation" hash-for-method="checkValidationGroupAmount">checkValidationGroupAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestValidation" hash-for-method="checkValidationGroupName">checkValidationGroupName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestValidation" hash-for-method="checkValidationProductAmount">checkValidationProductAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestValidation" hash-for-method="checkValidationProductName">checkValidationProductName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="countTest">countTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="createInvoiceWithExistingNameTest">createInvoiceWithExistingNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="createinvoiceTest">createinvoiceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="deleteAllInvoiceAndAddProductToAutocreatedTest">deleteAllInvoiceAndAddProductToAutocreatedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="deleteInvoiceTest">deleteInvoiceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="deleteNotExistingInvoiceTest">deleteNotExistingInvoiceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="editInvoiceNotExistingNameTest">editInvoiceNotExistingNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="editinvoiceTest">editinvoiceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="finishTest">finishTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="qTest">qTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="recountTest">recountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="removeproductNotExistingInPriceTest">removeproductNotExistingInPriceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="removeproductNotExistingTest">removeproductNotExistingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="removeproductTest">removeproductTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="showCommandListTest">showCommandListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="showNotExistingdiscountTest">showNotExistingdiscountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="showOneInvoiceTest">showOneInvoiceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="showPriceListTest">showPriceListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="showdiscountTest">showdiscountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCalculation" hash-for-method="test1condition">test1condition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCalculation" hash-for-method="test2condition">test2condition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCalculation" hash-for-method="test3condition">test3condition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCalculation" hash-for-method="test4condition">test4condition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCalculation" hash-for-method="test5condition">test5condition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCalculation" hash-for-method="test6condition">test6condition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCalculation" hash-for-method="test7condition">test7condition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestMainStart" hash-for-method="testShopMain">testShopMain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="testTest">testTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="updateTest">updateTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="updateTestBadFileNameInvoice">updateTestBadFileNameInvoice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.mycompany.promocalculator.test.TestCommand" hash-for-method="updateTestCorruptedinvoiceInvoice">updateTestCorruptedinvoiceInvoice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.promocalculator.test.TestValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkValidationAmount">
+                  </a> <!-- checkValidationAmount -->
+                  <span class="method-name">checkValidationAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkValidationCommonCount">
+                  </a> <!-- checkValidationCommonCount -->
+                  <span class="method-name">checkValidationCommonCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkValidationGroupAmount">
+                  </a> <!-- checkValidationGroupAmount -->
+                  <span class="method-name">checkValidationGroupAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkValidationGroupName">
+                  </a> <!-- checkValidationGroupName -->
+                  <span class="method-name">checkValidationGroupName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkValidationProductAmount">
+                  </a> <!-- checkValidationProductAmount -->
+                  <span class="method-name">checkValidationProductAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkValidationProductName">
+                  </a> <!-- checkValidationProductName -->
+                  <span class="method-name">checkValidationProductName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.promocalculator.test.TestCommand</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addproductIncorrectQuantityTest">
+                  </a> <!-- addproductIncorrectQuantityTest -->
+                  <span class="method-name">addproductIncorrectQuantityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addproductNotExistingNameTest">
+                  </a> <!-- addproductNotExistingNameTest -->
+                  <span class="method-name">addproductNotExistingNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addproductTest">
+                  </a> <!-- addproductTest -->
+                  <span class="method-name">addproductTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeDiscountStateFromFileTest">
+                  </a> <!-- changeDiscountStateFromFileTest -->
+                  <span class="method-name">changeDiscountStateFromFileTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="countTest">
+                  </a> <!-- countTest -->
+                  <span class="method-name">countTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvoiceWithExistingNameTest">
+                  </a> <!-- createInvoiceWithExistingNameTest -->
+                  <span class="method-name">createInvoiceWithExistingNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createinvoiceTest">
+                  </a> <!-- createinvoiceTest -->
+                  <span class="method-name">createinvoiceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAllInvoiceAndAddProductToAutocreatedTest">
+                  </a> <!-- deleteAllInvoiceAndAddProductToAutocreatedTest -->
+                  <span class="method-name">deleteAllInvoiceAndAddProductToAutocreatedTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvoiceTest">
+                  </a> <!-- deleteInvoiceTest -->
+                  <span class="method-name">deleteInvoiceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteNotExistingInvoiceTest">
+                  </a> <!-- deleteNotExistingInvoiceTest -->
+                  <span class="method-name">deleteNotExistingInvoiceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editInvoiceNotExistingNameTest">
+                  </a> <!-- editInvoiceNotExistingNameTest -->
+                  <span class="method-name">editInvoiceNotExistingNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editinvoiceTest">
+                  </a> <!-- editinvoiceTest -->
+                  <span class="method-name">editinvoiceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="finishTest">
+                  </a> <!-- finishTest -->
+                  <span class="method-name">finishTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="qTest">
+                  </a> <!-- qTest -->
+                  <span class="method-name">qTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="recountTest">
+                  </a> <!-- recountTest -->
+                  <span class="method-name">recountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeproductNotExistingInPriceTest">
+                  </a> <!-- removeproductNotExistingInPriceTest -->
+                  <span class="method-name">removeproductNotExistingInPriceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeproductNotExistingTest">
+                  </a> <!-- removeproductNotExistingTest -->
+                  <span class="method-name">removeproductNotExistingTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeproductTest">
+                  </a> <!-- removeproductTest -->
+                  <span class="method-name">removeproductTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showCommandListTest">
+                  </a> <!-- showCommandListTest -->
+                  <span class="method-name">showCommandListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showNotExistingdiscountTest">
+                  </a> <!-- showNotExistingdiscountTest -->
+                  <span class="method-name">showNotExistingdiscountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showOneInvoiceTest">
+                  </a> <!-- showOneInvoiceTest -->
+                  <span class="method-name">showOneInvoiceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showPriceListTest">
+                  </a> <!-- showPriceListTest -->
+                  <span class="method-name">showPriceListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showdiscountTest">
+                  </a> <!-- showdiscountTest -->
+                  <span class="method-name">showdiscountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTest">
+                  </a> <!-- testTest -->
+                  <span class="method-name">testTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTest">
+                  </a> <!-- updateTest -->
+                  <span class="method-name">updateTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTestBadFileNameInvoice">
+                  </a> <!-- updateTestBadFileNameInvoice -->
+                  <span class="method-name">updateTestBadFileNameInvoice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTestCorruptedinvoiceInvoice">
+                  </a> <!-- updateTestCorruptedinvoiceInvoice -->
+                  <span class="method-name">updateTestCorruptedinvoiceInvoice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.promocalculator.test.TestCalculation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1condition">
+                  </a> <!-- test1condition -->
+                  <span class="method-name">test1condition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2condition">
+                  </a> <!-- test2condition -->
+                  <span class="method-name">test2condition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3condition">
+                  </a> <!-- test3condition -->
+                  <span class="method-name">test3condition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4condition">
+                  </a> <!-- test4condition -->
+                  <span class="method-name">test4condition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5condition">
+                  </a> <!-- test5condition -->
+                  <span class="method-name">test5condition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test6condition">
+                  </a> <!-- test6condition -->
+                  <span class="method-name">test6condition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test7condition">
+                  </a> <!-- test7condition -->
+                  <span class="method-name">test7condition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mycompany.promocalculator.test.TestMainStart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testShopMain">
+                  </a> <!-- testShopMain -->
+                  <span class="method-name">testShopMain</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\dmitry.bulyan\AppData\Local\Temp\testng-eclipse--1823814860\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.mycompany.promocalculator.test.TestCalculation&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.promocalculator.test.TestCommand&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.promocalculator.test.TestMainStart&quot;/&gt;
+      &lt;class name=&quot;com.mycompany.promocalculator.test.TestValidation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(41);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'changeDiscountStateFromFileTest')
+data.setCell(0, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(0, 3, 10016);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test1condition')
+data.setCell(1, 2, 'com.mycompany.promocalculator.test.TestCalculation')
+data.setCell(1, 3, 1311);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test2condition')
+data.setCell(2, 2, 'com.mycompany.promocalculator.test.TestCalculation')
+data.setCell(2, 3, 298);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test3condition')
+data.setCell(3, 2, 'com.mycompany.promocalculator.test.TestCalculation')
+data.setCell(3, 3, 259);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test4condition')
+data.setCell(4, 2, 'com.mycompany.promocalculator.test.TestCalculation')
+data.setCell(4, 3, 155);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test5condition')
+data.setCell(5, 2, 'com.mycompany.promocalculator.test.TestCalculation')
+data.setCell(5, 3, 135);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'countTest')
+data.setCell(6, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(6, 3, 99);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createinvoiceTest')
+data.setCell(7, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(7, 3, 71);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'recountTest')
+data.setCell(8, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(8, 3, 70);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'updateTestBadFileNameInvoice')
+data.setCell(9, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(9, 3, 65);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test7condition')
+data.setCell(10, 2, 'com.mycompany.promocalculator.test.TestCalculation')
+data.setCell(10, 3, 64);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test6condition')
+data.setCell(11, 2, 'com.mycompany.promocalculator.test.TestCalculation')
+data.setCell(11, 3, 59);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'updateTestCorruptedinvoiceInvoice')
+data.setCell(12, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(12, 3, 58);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'updateTest')
+data.setCell(13, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(13, 3, 45);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkValidationAmount')
+data.setCell(14, 2, 'com.mycompany.promocalculator.test.TestValidation')
+data.setCell(14, 3, 37);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'deleteAllInvoiceAndAddProductToAutocreatedTest')
+data.setCell(15, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(15, 3, 22);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'addproductIncorrectQuantityTest')
+data.setCell(16, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(16, 3, 11);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'addproductTest')
+data.setCell(17, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(17, 3, 10);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'removeproductTest')
+data.setCell(18, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(18, 3, 9);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'showCommandListTest')
+data.setCell(19, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(19, 3, 8);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testShopMain')
+data.setCell(20, 2, 'com.mycompany.promocalculator.test.TestMainStart')
+data.setCell(20, 3, 7);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testTest')
+data.setCell(21, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(21, 3, 7);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'editInvoiceNotExistingNameTest')
+data.setCell(22, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(22, 3, 7);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'deleteInvoiceTest')
+data.setCell(23, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(23, 3, 6);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'removeproductNotExistingInPriceTest')
+data.setCell(24, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(24, 3, 6);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'showPriceListTest')
+data.setCell(25, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(25, 3, 6);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'removeproductNotExistingTest')
+data.setCell(26, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(26, 3, 5);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'finishTest')
+data.setCell(27, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(27, 3, 5);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'addproductNotExistingNameTest')
+data.setCell(28, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(28, 3, 5);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'qTest')
+data.setCell(29, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(29, 3, 5);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'showOneInvoiceTest')
+data.setCell(30, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(30, 3, 5);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'showNotExistingdiscountTest')
+data.setCell(31, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(31, 3, 5);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'editinvoiceTest')
+data.setCell(32, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(32, 3, 4);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'createInvoiceWithExistingNameTest')
+data.setCell(33, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(33, 3, 4);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'showdiscountTest')
+data.setCell(34, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(34, 3, 4);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'deleteNotExistingInvoiceTest')
+data.setCell(35, 2, 'com.mycompany.promocalculator.test.TestCommand')
+data.setCell(35, 3, 3);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'checkValidationGroupName')
+data.setCell(36, 2, 'com.mycompany.promocalculator.test.TestValidation')
+data.setCell(36, 3, 3);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'checkValidationProductName')
+data.setCell(37, 2, 'com.mycompany.promocalculator.test.TestValidation')
+data.setCell(37, 3, 2);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'checkValidationProductAmount')
+data.setCell(38, 2, 'com.mycompany.promocalculator.test.TestValidation')
+data.setCell(38, 3, 1);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'checkValidationGroupAmount')
+data.setCell(39, 2, 'com.mycompany.promocalculator.test.TestValidation')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'checkValidationCommonCount')
+data.setCell(40, 2, 'com.mycompany.promocalculator.test.TestValidation')
+data.setCell(40, 3, 1);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.promocalculator.test.TestCalculation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test1condition</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test2condition</span>
+                <span class="method-start">1315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test3condition</span>
+                <span class="method-start">1614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test4condition</span>
+                <span class="method-start">1873 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test5condition</span>
+                <span class="method-start">2029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test6condition</span>
+                <span class="method-start">2166 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test7condition</span>
+                <span class="method-start">2225 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.promocalculator.test.TestCommand</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">2294 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addproductIncorrectQuantityTest</span>
+                <span class="method-start">2326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">2341 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addproductNotExistingNameTest</span>
+                <span class="method-start">2425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">2433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addproductTest</span>
+                <span class="method-start">2498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">2511 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeDiscountStateFromFileTest</span>
+                <span class="method-start">2550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">12583 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">countTest</span>
+                <span class="method-start">12620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">12719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createInvoiceWithExistingNameTest</span>
+                <span class="method-start">12777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">12781 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createinvoiceTest</span>
+                <span class="method-start">12817 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">12888 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteAllInvoiceAndAddProductToAutocreatedTest</span>
+                <span class="method-start">12914 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">12939 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteInvoiceTest</span>
+                <span class="method-start">12967 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">12976 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteNotExistingInvoiceTest</span>
+                <span class="method-start">13006 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editInvoiceNotExistingNameTest</span>
+                <span class="method-start">13051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editinvoiceTest</span>
+                <span class="method-start">13124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13129 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">finishTest</span>
+                <span class="method-start">13154 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">qTest</span>
+                <span class="method-start">13193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">recountTest</span>
+                <span class="method-start">13227 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13298 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeproductNotExistingInPriceTest</span>
+                <span class="method-start">13322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13329 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeproductNotExistingTest</span>
+                <span class="method-start">13353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeproductTest</span>
+                <span class="method-start">13391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13401 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">showCommandListTest</span>
+                <span class="method-start">13424 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">showNotExistingdiscountTest</span>
+                <span class="method-start">13458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13465 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">showOneInvoiceTest</span>
+                <span class="method-start">13495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13501 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">showPriceListTest</span>
+                <span class="method-start">13530 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13536 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">showdiscountTest</span>
+                <span class="method-start">13563 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13569 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTest</span>
+                <span class="method-start">13599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateTest</span>
+                <span class="method-start">13679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateTestBadFileNameInvoice</span>
+                <span class="method-start">13784 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initTests</span>
+                <span class="method-start">13853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateTestCorruptedinvoiceInvoice</span>
+                <span class="method-start">13910 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.promocalculator.test.TestMainStart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testShopMain</span>
+                <span class="method-start">13972 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.mycompany.promocalculator.test.TestValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">f</span>
+                <span class="method-start">13984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkValidationAmount</span>
+                <span class="method-start">14015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">f</span>
+                <span class="method-start">14056 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkValidationCommonCount</span>
+                <span class="method-start">14105 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">f</span>
+                <span class="method-start">14106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkValidationGroupAmount</span>
+                <span class="method-start">14130 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">f</span>
+                <span class="method-start">14132 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkValidationGroupName</span>
+                <span class="method-start">14152 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">f</span>
+                <span class="method-start">14155 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkValidationProductAmount</span>
+                <span class="method-start">14183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">f</span>
+                <span class="method-start">14188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkValidationProductName</span>
+                <span class="method-start">14211 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

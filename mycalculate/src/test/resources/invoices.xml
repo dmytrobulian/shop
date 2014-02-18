@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <list>
 	<invoice>
+		<invoicename>invoice1</invoicename>
 		<product>
 			<name>milk</name>
 			<quantity>3</quantity>
@@ -15,6 +16,7 @@
 		</product>
 	</invoice>
 	<invoice>
+		<invoicename>invoice2</invoicename>
 		<product>
 			<name>wine</name>
 			<quantity>2</quantity>
@@ -25,6 +27,7 @@
 		</product>
 	</invoice>
 	<invoice>	
+		<invoicename>invoice3</invoicename>
 		<product>
 			<name>paper notes</name>
 			<quantity>4</quantity>

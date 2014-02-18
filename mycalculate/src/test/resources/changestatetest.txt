@@ -1,0 +1,5 @@
+common a 20%
+true
+group a 10%
+false
+asas

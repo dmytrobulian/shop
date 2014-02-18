@@ -1,0 +1,21 @@
+ INFO DeleteInvoice:25 - Invoice invoice3 have been removed
+ INFO ShowInvoices:14 - List of invoices:
+ INFO ShowInvoices:17 - invoice name=invoice1
+ INFO ShowInvoices:21 - 		product name=pen quantity=2
+ INFO ShowInvoices:21 - 		product name=milk quantity=3
+ INFO ShowInvoices:21 - 		product name=sugar quantity=1
+ INFO ShowInvoices:17 - invoice name=invoice2
+ INFO ShowInvoices:21 - 		product name=wine quantity=2
+ INFO ShowInvoices:21 - 		product name=beer quantity=3
+ INFO DeleteInvoice:25 - Invoice invoice1 have been removed
+ INFO ShowInvoices:14 - List of invoices:
+ INFO ShowInvoices:17 - invoice name=invoice2
+ INFO ShowInvoices:21 - 		product name=wine quantity=2
+ INFO ShowInvoices:21 - 		product name=beer quantity=3
+ INFO DeleteInvoice:25 - Invoice invoice2 have been removed
+ INFO ShowInvoices:14 - List of invoices:
+ INFO ShowInvoices:17 - invoice name=autoInvoice
+DEBUG Invoice:20 - added beer quantity 1 
+ INFO AddProductToInvoice:26 - product beer added  quantity=1
+ INFO ShowOneInvoice:20 - invoice name=autoInvoice
+ INFO ShowOneInvoice:24 - 		product name=beer quantity=1

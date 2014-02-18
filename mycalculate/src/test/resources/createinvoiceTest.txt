@@ -1,0 +1,13 @@
+ INFO : Invoices have been created
+ INFO : List of invoices:
+ INFO : invoice name=invoice1
+ INFO : 		product name=pen quantity=2
+ INFO : 		product name=milk quantity=3
+ INFO : 		product name=sugar quantity=1
+ INFO : invoice name=invoice2
+ INFO : 		product name=wine quantity=2
+ INFO : 		product name=beer quantity=3
+ INFO : invoice name=invoice3
+ INFO : 		product name=paper notes quantity=4
+ INFO : 		product name=gloves quantity=2
+ INFO : invoice name=newtestinvoice

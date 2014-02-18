@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="41" passed="41">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14244" started-at="2014-02-18T15:50:26Z" finished-at="2014-02-18T15:50:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14244" started-at="2014-02-18T15:50:26Z" finished-at="2014-02-18T15:50:40Z">
+      <class name="com.mycompany.promocalculator.test.TestMainStart">
+        <test-method status="PASS" signature="testShopMain()[pri:0, instance:com.mycompany.promocalculator.test.TestMainStart@716147e5]" name="testShopMain" duration-ms="7" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShopMain -->
+      </class> <!-- com.mycompany.promocalculator.test.TestMainStart -->
+      <class name="com.mycompany.promocalculator.test.TestCommand">
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="32" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="addproductIncorrectQuantityTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="addproductIncorrectQuantityTest" duration-ms="11" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addproductIncorrectQuantityTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="84" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="addproductNotExistingNameTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="addproductNotExistingNameTest" duration-ms="5" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addproductNotExistingNameTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="65" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="addproductTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="addproductTest" duration-ms="10" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addproductTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="39" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="changeDiscountStateFromFileTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="changeDiscountStateFromFileTest" duration-ms="10016" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeDiscountStateFromFileTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="37" started-at="2014-02-18T17:50:38Z" finished-at="2014-02-18T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="countTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="countTest" duration-ms="99" started-at="2014-02-18T17:50:38Z" finished-at="2014-02-18T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="58" started-at="2014-02-18T17:50:38Z" finished-at="2014-02-18T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="createInvoiceWithExistingNameTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="createInvoiceWithExistingNameTest" duration-ms="4" started-at="2014-02-18T17:50:38Z" finished-at="2014-02-18T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvoiceWithExistingNameTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="36" started-at="2014-02-18T17:50:38Z" finished-at="2014-02-18T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="createinvoiceTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="createinvoiceTest" duration-ms="71" started-at="2014-02-18T17:50:38Z" finished-at="2014-02-18T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createinvoiceTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="26" started-at="2014-02-18T17:50:38Z" finished-at="2014-02-18T17:50:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="deleteAllInvoiceAndAddProductToAutocreatedTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="deleteAllInvoiceAndAddProductToAutocreatedTest" duration-ms="22" started-at="2014-02-18T17:50:38Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAllInvoiceAndAddProductToAutocreatedTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="28" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="deleteInvoiceTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="deleteInvoiceTest" duration-ms="6" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvoiceTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="29" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="deleteNotExistingInvoiceTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="deleteNotExistingInvoiceTest" duration-ms="3" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNotExistingInvoiceTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="41" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="editInvoiceNotExistingNameTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="editInvoiceNotExistingNameTest" duration-ms="7" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editInvoiceNotExistingNameTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="63" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="editinvoiceTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="editinvoiceTest" duration-ms="4" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editinvoiceTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="25" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="finishTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="finishTest" duration-ms="5" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="33" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="qTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="qTest" duration-ms="5" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- qTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="27" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="recountTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="recountTest" duration-ms="70" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recountTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="24" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="removeproductNotExistingInPriceTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="removeproductNotExistingInPriceTest" duration-ms="6" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeproductNotExistingInPriceTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="24" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="removeproductNotExistingTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="removeproductNotExistingTest" duration-ms="5" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeproductNotExistingTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="32" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="removeproductTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="removeproductTest" duration-ms="9" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeproductTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="23" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="showCommandListTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="showCommandListTest" duration-ms="8" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showCommandListTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="26" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="showNotExistingdiscountTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="showNotExistingdiscountTest" duration-ms="5" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showNotExistingdiscountTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="30" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="showOneInvoiceTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="showOneInvoiceTest" duration-ms="5" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showOneInvoiceTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="29" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="showPriceListTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="showPriceListTest" duration-ms="6" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showPriceListTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="27" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="showdiscountTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="showdiscountTest" duration-ms="4" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showdiscountTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="30" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="testTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="testTest" duration-ms="7" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="71" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="updateTest()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="updateTest" duration-ms="45" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTest -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="59" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="updateTestBadFileNameInvoice()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="updateTestBadFileNameInvoice" duration-ms="65" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTestBadFileNameInvoice -->
+        <test-method status="PASS" signature="initTests()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="initTests" is-config="true" duration-ms="57" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTests -->
+        <test-method status="PASS" signature="updateTestCorruptedinvoiceInvoice()[pri:0, instance:com.mycompany.promocalculator.test.TestCommand@6415619c]" name="updateTestCorruptedinvoiceInvoice" duration-ms="58" started-at="2014-02-18T17:50:39Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateTestCorruptedinvoiceInvoice -->
+      </class> <!-- com.mycompany.promocalculator.test.TestCommand -->
+      <class name="com.mycompany.promocalculator.test.TestValidation">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="f" is-config="true" duration-ms="31" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="checkValidationAmount()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="checkValidationAmount" duration-ms="37" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidationAmount -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="f" is-config="true" duration-ms="49" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="checkValidationCommonCount()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="checkValidationCommonCount" duration-ms="1" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidationCommonCount -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="f" is-config="true" duration-ms="24" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="checkValidationGroupAmount()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="checkValidationGroupAmount" duration-ms="1" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidationGroupAmount -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="f" is-config="true" duration-ms="20" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="checkValidationGroupName()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="checkValidationGroupName" duration-ms="3" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidationGroupName -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="f" is-config="true" duration-ms="28" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="checkValidationProductAmount()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="checkValidationProductAmount" duration-ms="1" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidationProductAmount -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="f" is-config="true" duration-ms="23" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="checkValidationProductName()[pri:0, instance:com.mycompany.promocalculator.test.TestValidation@23716cfd]" name="checkValidationProductName" duration-ms="2" started-at="2014-02-18T17:50:40Z" finished-at="2014-02-18T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkValidationProductName -->
+      </class> <!-- com.mycompany.promocalculator.test.TestValidation -->
+      <class name="com.mycompany.promocalculator.test.TestCalculation">
+        <test-method status="PASS" signature="test1condition()[pri:0, instance:com.mycompany.promocalculator.test.TestCalculation@1e5549d1]" name="test1condition" duration-ms="1311" started-at="2014-02-18T17:50:26Z" finished-at="2014-02-18T17:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1condition -->
+        <test-method status="PASS" signature="test2condition()[pri:0, instance:com.mycompany.promocalculator.test.TestCalculation@1e5549d1]" name="test2condition" duration-ms="298" started-at="2014-02-18T17:50:27Z" finished-at="2014-02-18T17:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2condition -->
+        <test-method status="PASS" signature="test3condition()[pri:0, instance:com.mycompany.promocalculator.test.TestCalculation@1e5549d1]" name="test3condition" duration-ms="259" started-at="2014-02-18T17:50:27Z" finished-at="2014-02-18T17:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3condition -->
+        <test-method status="PASS" signature="test4condition()[pri:0, instance:com.mycompany.promocalculator.test.TestCalculation@1e5549d1]" name="test4condition" duration-ms="155" started-at="2014-02-18T17:50:27Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4condition -->
+        <test-method status="PASS" signature="test5condition()[pri:0, instance:com.mycompany.promocalculator.test.TestCalculation@1e5549d1]" name="test5condition" duration-ms="135" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5condition -->
+        <test-method status="PASS" signature="test6condition()[pri:0, instance:com.mycompany.promocalculator.test.TestCalculation@1e5549d1]" name="test6condition" duration-ms="59" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6condition -->
+        <test-method status="PASS" signature="test7condition()[pri:0, instance:com.mycompany.promocalculator.test.TestCalculation@1e5549d1]" name="test7condition" duration-ms="64" started-at="2014-02-18T17:50:28Z" finished-at="2014-02-18T17:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7condition -->
+      </class> <!-- com.mycompany.promocalculator.test.TestCalculation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

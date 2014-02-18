@@ -1,0 +1,20 @@
+ INFO : Input discount name:
+ INFO : discountname="common a 20%"
+ INFO : Input active state (true/false)
+ INFO : state="true"
+ INFO : drink   active state=true
+ INFO : group a 10%   active state=true
+ INFO : common a 20%   active state=true
+ INFO : Input discount name:
+ INFO : discountname="group a 10%"
+ INFO : Input active state (true/false)
+ INFO : state="false"
+ INFO : drink   active state=true
+ INFO : group a 10%   active state=false
+ INFO : common a 20%   active state=true
+ INFO : Input discount name:
+ INFO : discountname="asas"
+ INFO : drink   active state=true
+ INFO : group a 10%   active state=false
+ INFO : common a 20%   active state=true
+ INFO : Wrong discount name

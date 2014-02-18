@@ -1,0 +1,4 @@
+ INFO : Context initialization
+ WARN : Error processing invoice list "src\test\resources\ices.xml"
+ INFO : Run programm with parameter
+ INFO : EXAMPLE:java -jar mycalculate-1.0-SNAPSHOT.jar pricelist.xml discount.xml invoices.xml

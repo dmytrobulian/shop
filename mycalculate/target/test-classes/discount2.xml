@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<list>
+<promotion>
+		<discountName>third milk free</discountName>
+		<discountCondition>
+			<productlist>
+				<product>
+					<name>milk</name>
+					<type>percent</type>
+					<amount>-1</amount>
+					<quantity>2</quantity>
+				</product>
+				<product>
+					<name>milk</name>
+					<type>bonus</type>
+					<amount>0</amount>
+					<quantity>0</quantity>
+				</product>
+			</productlist>
+			<grouplist/>
+			<common/>
+		</discountCondition>
+		<validation>
+			<productlist>
+				<product>
+					<name>milk</name>
+					<quantity>2</quantity>
+					<amount>0</amount>
+				</product>
+			</productlist>
+			<grouplist/>
+			<common/>
+		</validation>
+	</promotion>		
+</list>

@@ -1,0 +1,4 @@
+ INFO : Attempt to remove milk
+ INFO : invoice name=invoice1
+ INFO : 		product name=pen quantity=2
+ INFO : 		product name=sugar quantity=1

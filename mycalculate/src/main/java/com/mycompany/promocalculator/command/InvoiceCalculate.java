@@ -1,14 +1,15 @@
 package com.mycompany.promocalculator.command;
 
-import com.mycompany.promocalculator.Shop;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+
+import com.mycompany.promocalculator.Context;
 
 public class InvoiceCalculate implements Command {
 
 	@Override
-	public boolean execute(Shop shop) {
-		boolean successful_execution = false;
-		shop.invoiceCalculate();
-		successful_execution = true;
-		return successful_execution;
+	public String execute(Context context, String[] args) throws ParserConfigurationException, TransformerException {
+		context.invoiceCalculate();
+		return this.getClass().getName() +" executed";
 	}
 }

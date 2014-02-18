@@ -1,0 +1,24 @@
+ INFO : =====invoice name ===== invoice1
+ INFO : 	pen  0.2
+ INFO : 	pen  0.2
+ INFO : 	milk  1.2
+ INFO : 	milk  1.08
+ INFO : 	milk  1.2
+ INFO : 	sugar  6.822
+ INFO :  result summ for  invoice = 10.702
+ INFO : =====invoice name ===== invoice2
+ INFO : 	wine  60.5
+ INFO : 	wine  54.45
+ INFO : 	beer  9.0
+ INFO : 	beer  8.1
+ INFO : 	beer  9.0
+ INFO :   beer   bonus price= 0.0  usual price=9.0
+ INFO :  result summ for  invoice = 141.05
+ INFO : =====invoice name ===== invoice3
+ INFO : 	paper notes  4.0
+ INFO : 	paper notes  4.0
+ INFO : 	paper notes  4.0
+ INFO : 	paper notes  4.0
+ INFO : 	gloves  110.0
+ INFO : 	gloves  110.0
+ INFO :  result summ for  invoice = 236.0

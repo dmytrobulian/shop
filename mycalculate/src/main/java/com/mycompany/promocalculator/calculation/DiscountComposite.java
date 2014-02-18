@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
+import com.mycompany.promocalculator.Context;
 import com.mycompany.promocalculator.ConvertedInvoice;
-import com.mycompany.promocalculator.Shop;
 
 public class DiscountComposite implements DiscountComponent {
 	List<DiscountComponent> component = new ArrayList<DiscountComponent>();
@@ -16,26 +16,23 @@ public class DiscountComposite implements DiscountComponent {
 		component.add(calculation);
 	}
 
-	protected Integer counterChilds(ConvertedInvoice cInvoice, Shop shop) {
+	protected Integer counterChilds(ConvertedInvoice cInvoice, Context context) {
 		Iterator<DiscountComponent> i = component.iterator();
 		Integer result = (Integer) parameter.get("counter");
 		while (i.hasNext()) {
 			DiscountComponent child = i.next();
-			Integer childResultValue = child.count(cInvoice, shop);
+			Integer childResultValue = child.count(cInvoice, context);
 			result = result < childResultValue ? result : childResultValue;
 		}
 		parameter.put("counter", result);
 		return result;
 	}
 
-	protected ConvertedInvoice addDiscountToChildInvoice(
-			ConvertedInvoice cinvoice, Shop shop, Integer counter,
-			String discountName) {
+	protected ConvertedInvoice addDiscountToChildInvoice(ConvertedInvoice cinvoice, Context context, Integer counter, String discountName) {
 		Iterator<DiscountComponent> i = component.iterator();
 		ConvertedInvoice updateInvoice = new ConvertedInvoice(cinvoice);
 		while (i.hasNext()) {
-			updateInvoice = i.next().addDiscountToInvoice(updateInvoice, shop,
-					counter, discountName);
+			updateInvoice = i.next().addDiscountToInvoice(updateInvoice, context, counter, discountName);
 		}
 		return updateInvoice;
 	}
@@ -46,19 +43,17 @@ public class DiscountComposite implements DiscountComponent {
 	}
 
 	@Override
-	public Integer count(ConvertedInvoice cInvoice, Shop shop) {
+	public Integer count(ConvertedInvoice cInvoice, Context context) {
 		Integer allProductQuantity = new Integer(cInvoice.size());
 		parameter.get("quantity");
-		Integer result = allProductQuantity
-				/ new Integer(parameter.get("quantity").toString());
+		Integer result = allProductQuantity / new Integer(parameter.get("quantity").toString());
 		parameter.put("counter", result);
-		return counterChilds(cInvoice, shop);
+		return counterChilds(cInvoice, context);
 	}
 
 	@Override
-	public ConvertedInvoice addDiscountToInvoice(ConvertedInvoice cinvoice,
-			Shop shop, Integer counter, String discountName) {
-		return addDiscountToChildInvoice(cinvoice, shop, counter, discountName);
+	public ConvertedInvoice addDiscountToInvoice(ConvertedInvoice cinvoice, Context context, Integer counter, String discountName) {
+		return addDiscountToChildInvoice(cinvoice, context, counter, discountName);
 	}
 
 }

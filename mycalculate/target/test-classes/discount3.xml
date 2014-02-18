@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<list>
+<promotion>
+		<discountName>amount 150 discount for A group 20%</discountName>
+		<discountCondition>
+			<productlist/>				
+			<grouplist>
+				<group>
+					<name>a</name>
+					<amount>20</amount>
+					<type>percent</type>
+					<quantity>1</quantity>
+				</group>
+			</grouplist>
+			<common/>
+		</discountCondition>
+		<validation>
+			<productlist/>			
+			<grouplist/>
+			<common>
+				<sum>
+					<amount>150</amount>
+					<quantity>0</quantity>
+				</sum>
+			</common>
+		</validation>
+	</promotion>		
+</list>

@@ -2,9 +2,9 @@ package com.mycompany.promocalculator.validation;
 
 import java.util.Iterator;
 
+import com.mycompany.promocalculator.Context;
 import com.mycompany.promocalculator.ConvertedInvoice;
 import com.mycompany.promocalculator.ProductWithChanges;
-import com.mycompany.promocalculator.Shop;
 
 public class ValidationCommon extends ValidationComposite {
 
@@ -16,7 +16,7 @@ public class ValidationCommon extends ValidationComposite {
 	 * )
 	 */
 	@Override
-	public boolean validate(ConvertedInvoice cinvoice, Shop shop) {
+	public boolean validate(ConvertedInvoice cinvoice, Context context) {
 
 		boolean result = false;
 		Float amount = new Float(parameter.get("amount").toString());
@@ -27,9 +27,9 @@ public class ValidationCommon extends ValidationComposite {
 		if (amount > 0) {
 			while (ci.hasNext()) {
 				String pName = ci.next().getProductName();
-				sum += shop.priceList.getPrice(pName);
+				sum += context.priceList.getPrice(pName);
 				if (sum >= amount) {
-					return validateChilds(cinvoice, shop);
+					return validateChilds(cinvoice, context);
 				}
 			}
 		} else {
@@ -37,7 +37,7 @@ public class ValidationCommon extends ValidationComposite {
 				ci.next();
 				counter++;
 				if (counter >= quantity) {
-					return validateChilds(cinvoice, shop);
+					return validateChilds(cinvoice, context);
 				}
 			}
 

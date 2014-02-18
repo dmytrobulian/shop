@@ -1,0 +1,3 @@
+ INFO : drink   active state=true
+ INFO : group a 10%   active state=true
+ INFO : common a 20%   active state=true

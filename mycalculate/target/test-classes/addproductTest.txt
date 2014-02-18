@@ -1,0 +1,5 @@
+ INFO : product milk added  quantity=1
+ INFO : invoice name=invoice1
+ INFO : 		product name=pen quantity=2
+ INFO : 		product name=milk quantity=1
+ INFO : 		product name=sugar quantity=1

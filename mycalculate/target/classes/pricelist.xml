@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<list>
+	<product>
+		<name>milk</name>
+		<group>a</group>
+		<price>1.20</price>
+	</product>	
+	<product>
+		<name>sugar</name>
+		<group>a</group>
+		<price>7.58</price>
+	</product>
+	<product>
+		<name>wine</name>
+		<group>a</group>
+		<price>60.50</price>
+	</product>
+	<product>
+		<name>beer</name>
+		<group>a</group>
+		<price>9.00</price>
+	</product>
+	<product>
+		<name>pen</name>
+		<group>b</group>
+		<price>0.20</price>
+	</product>
+	<product>
+		<name>paper notes</name>
+		<group>b</group>
+		<price>4</price>
+	</product>
+	<product>
+		<name>gloves</name>
+		<group>c</group>
+		<price>110</price>
+	</product>
+	<product>
+		<name>hammer</name>
+		<group>c</group>
+		<price>50</price>
+	</product>
+	<product>
+		<name>needle</name>
+		<group>c</group>
+		<price>7.20</price>
+	</product>
+	<product>
+		<name>turn-screw</name>
+		<group>c</group>
+		<price>20</price>
+	</product>
+	<product>
+		<name>bicycle</name>
+		<group>d</group>
+		<price>781.20</price>
+	</product>
+	<product>
+		<name>percent discount</name>
+		<group>discount bonus</group>
+		<price>0.0</price>
+	</product>
+	<product>
+		<name>fixed discount</name>
+		<group>discount bonus</group>
+		<price>0.0</price>
+	</product>
+</list>

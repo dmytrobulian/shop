@@ -3,11 +3,12 @@ package com.mycompany.promocalculator.validation;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import com.mycompany.promocalculator.Context;
 import com.mycompany.promocalculator.ConvertedInvoice;
 import com.mycompany.promocalculator.ProductWithChanges;
-import com.mycompany.promocalculator.Shop;
 
 public class ValidationProductName extends ValidationComposite {
+	private final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(this.getClass());
 	/*
 	 * needed product exist in invoice
 	 * 
@@ -16,13 +17,11 @@ public class ValidationProductName extends ValidationComposite {
 	 * )
 	 */
 	@Override
-	public boolean validate(ConvertedInvoice cinvoice, Shop shop) {
+	public boolean validate(ConvertedInvoice cinvoice,  Context context) {
 
 		boolean result = false;
-		ArrayList<String> productname = (ArrayList<String>) parameter
-				.get("productname");
-		int quantity = new Integer(parameter.get("quantity").toString())
-				.intValue();
+		ArrayList<String> productname = (ArrayList<String>) parameter.get("productname");
+		int quantity = new Integer(parameter.get("quantity").toString()).intValue();
 		int counter = 0;
 		Iterator<ProductWithChanges> ci = cinvoice.getProducts();
 		while (ci.hasNext() && !result) {
@@ -30,9 +29,8 @@ public class ValidationProductName extends ValidationComposite {
 			if (productname.contains(pName)) {
 				counter++;
 				if (counter >= quantity) {
-					System.out.println("ValidationProductName.validate() name="
-							+ pName);
-					return validateChilds(cinvoice, shop);
+					logger.debug("name ={}",pName);
+					return validateChilds(cinvoice, context);
 				}
 			}
 		}

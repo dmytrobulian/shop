@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 18 17:50:26 EET 2014</td>
+</tr>
+<tr><td>Total time:</td><td>14 seconds (14244 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.addproductIncorrectQuantityTest()'><b>addproductIncorrectQuantityTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.addproductNotExistingNameTest()'><b>addproductNotExistingNameTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.addproductTest()'><b>addproductTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.changeDiscountStateFromFileTest()'><b>changeDiscountStateFromFileTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>10</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestValidation.checkValidationAmount()'><b>checkValidationAmount</b><br>Test class: com.mycompany.promocalculator.test.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestValidation@23716cfd</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestValidation.checkValidationCommonCount()'><b>checkValidationCommonCount</b><br>Test class: com.mycompany.promocalculator.test.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestValidation@23716cfd</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestValidation.checkValidationGroupAmount()'><b>checkValidationGroupAmount</b><br>Test class: com.mycompany.promocalculator.test.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestValidation@23716cfd</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestValidation.checkValidationGroupName()'><b>checkValidationGroupName</b><br>Test class: com.mycompany.promocalculator.test.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestValidation@23716cfd</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestValidation.checkValidationProductAmount()'><b>checkValidationProductAmount</b><br>Test class: com.mycompany.promocalculator.test.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestValidation@23716cfd</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestValidation.checkValidationProductName()'><b>checkValidationProductName</b><br>Test class: com.mycompany.promocalculator.test.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestValidation@23716cfd</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.countTest()'><b>countTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.createInvoiceWithExistingNameTest()'><b>createInvoiceWithExistingNameTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.createinvoiceTest()'><b>createinvoiceTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.deleteAllInvoiceAndAddProductToAutocreatedTest()'><b>deleteAllInvoiceAndAddProductToAutocreatedTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.deleteInvoiceTest()'><b>deleteInvoiceTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.deleteNotExistingInvoiceTest()'><b>deleteNotExistingInvoiceTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.editInvoiceNotExistingNameTest()'><b>editInvoiceNotExistingNameTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.editinvoiceTest()'><b>editinvoiceTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.finishTest()'><b>finishTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.qTest()'><b>qTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.recountTest()'><b>recountTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.removeproductNotExistingInPriceTest()'><b>removeproductNotExistingInPriceTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.removeproductNotExistingTest()'><b>removeproductNotExistingTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.removeproductTest()'><b>removeproductTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.showCommandListTest()'><b>showCommandListTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.showNotExistingdiscountTest()'><b>showNotExistingdiscountTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.showOneInvoiceTest()'><b>showOneInvoiceTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.showPriceListTest()'><b>showPriceListTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.showdiscountTest()'><b>showdiscountTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCalculation.test1condition()'><b>test1condition</b><br>Test class: com.mycompany.promocalculator.test.TestCalculation</td>
+<td></td>
+<td>1</td>
+<td>com.mycompany.promocalculator.test.TestCalculation@1e5549d1</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCalculation.test2condition()'><b>test2condition</b><br>Test class: com.mycompany.promocalculator.test.TestCalculation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCalculation@1e5549d1</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCalculation.test3condition()'><b>test3condition</b><br>Test class: com.mycompany.promocalculator.test.TestCalculation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCalculation@1e5549d1</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCalculation.test4condition()'><b>test4condition</b><br>Test class: com.mycompany.promocalculator.test.TestCalculation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCalculation@1e5549d1</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCalculation.test5condition()'><b>test5condition</b><br>Test class: com.mycompany.promocalculator.test.TestCalculation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCalculation@1e5549d1</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCalculation.test6condition()'><b>test6condition</b><br>Test class: com.mycompany.promocalculator.test.TestCalculation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCalculation@1e5549d1</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCalculation.test7condition()'><b>test7condition</b><br>Test class: com.mycompany.promocalculator.test.TestCalculation</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCalculation@1e5549d1</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestMainStart.testShopMain()'><b>testShopMain</b><br>Test class: com.mycompany.promocalculator.test.TestMainStart</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestMainStart@716147e5</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.testTest()'><b>testTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.updateTest()'><b>updateTest</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.updateTestBadFileNameInvoice()'><b>updateTestBadFileNameInvoice</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+<tr>
+<td title='com.mycompany.promocalculator.test.TestCommand.updateTestCorruptedinvoiceInvoice()'><b>updateTestCorruptedinvoiceInvoice</b><br>Test class: com.mycompany.promocalculator.test.TestCommand</td>
+<td></td>
+<td>0</td>
+<td>com.mycompany.promocalculator.test.TestCommand@6415619c</td></tr>
+</table><p>
+</body>
+</html>

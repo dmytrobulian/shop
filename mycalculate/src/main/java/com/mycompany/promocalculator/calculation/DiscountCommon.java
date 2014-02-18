@@ -2,15 +2,15 @@ package com.mycompany.promocalculator.calculation;
 
 import java.util.Iterator;
 
+import com.mycompany.promocalculator.Context;
 import com.mycompany.promocalculator.ConvertedInvoice;
 import com.mycompany.promocalculator.DiscountActionDescription;
 import com.mycompany.promocalculator.ProductWithChanges;
-import com.mycompany.promocalculator.Shop;
 
 public class DiscountCommon extends DiscountComposite {
 
 	@Override
-	public Integer count(ConvertedInvoice cinvoice, Shop shop) {
+	public Integer count(ConvertedInvoice cinvoice, Context context) {
 		Integer allProductQuantity = new Integer(cinvoice.size());
 		String discountType = parameter.get("type").toString();
 		Integer quantity = new Integer(parameter.get("quantity").toString());
@@ -32,7 +32,7 @@ public class DiscountCommon extends DiscountComposite {
 		 * ConvertedInvoice(cinvoice); Iterator<ProductWithChanges> ci =
 		 * updateInvoice.getProducts(); Float sum = new Float(0); while
 		 * (ci.hasNext()) {
-		 * sum+=shop.priceList.getPrice(ci.next().getProductName()); } result =
+		 * sum+=context.getPrice(ci.next().getProductName()); } result =
 		 * (int) (sum/amount); parameter.put("counter", result); return result;
 		 * }
 		 */
@@ -42,8 +42,7 @@ public class DiscountCommon extends DiscountComposite {
 	}
 
 	@Override
-	public ConvertedInvoice addDiscountToInvoice(ConvertedInvoice cinvoice,
-			Shop shop, Integer counter, String discountName) {
+	public ConvertedInvoice addDiscountToInvoice(ConvertedInvoice cinvoice, Context context, Integer counter, String discountName) {
 		Integer productInInvoiceQuantity = new Integer(0);
 		ConvertedInvoice updateInvoice = new ConvertedInvoice(cinvoice);
 		Iterator<ProductWithChanges> ci = updateInvoice.getProducts();
@@ -55,12 +54,10 @@ public class DiscountCommon extends DiscountComposite {
 			while (ci.hasNext()) {
 				ProductWithChanges product = ci.next();
 				productInInvoiceQuantity++;
-				if ((productInInvoiceQuantity % quantity == 0)
-						&& ((productInInvoiceQuantity / quantity) <= counter)) {
+				if ((productInInvoiceQuantity % quantity == 0) && ((productInInvoiceQuantity / quantity) <= counter)) {
 					if (discountAmount >= 0) {
 						// apply bonus for specific product
-						product.addDiscount(new DiscountActionDescription(
-								discountName, discountType, discountAmount));
+						product.addDiscount(new DiscountActionDescription(discountName, discountType, discountAmount));
 					}
 				}
 			}
@@ -69,15 +66,11 @@ public class DiscountCommon extends DiscountComposite {
 			for (int i = 0; i < counter; i++) {
 				Iterator<ProductWithChanges> ip = updateInvoice.getProducts();
 				while (ip.hasNext()) {
-					updateInvoice.getChanges().add(
-							new DiscountActionDescription(ip.next()
-									.getProductName(), discountType,
-									discountAmount));
+					updateInvoice.getChanges().add(new DiscountActionDescription(ip.next().getProductName(), discountType, discountAmount));
 				}
 			}
 		}
-		updateInvoice = addDiscountToChildInvoice(updateInvoice, shop, counter,
-				discountName);
+		updateInvoice = addDiscountToChildInvoice(updateInvoice, context, counter, discountName);
 		return updateInvoice;
 	}
 }

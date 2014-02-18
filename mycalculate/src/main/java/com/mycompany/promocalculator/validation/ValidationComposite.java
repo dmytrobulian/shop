@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
+import com.mycompany.promocalculator.Context;
 import com.mycompany.promocalculator.ConvertedInvoice;
-import com.mycompany.promocalculator.Shop;
 
 public class ValidationComposite implements ValidationComponent {
 	protected HashMap<String, Object> parameter;
@@ -18,15 +18,15 @@ public class ValidationComposite implements ValidationComponent {
 	}
 
 	@Override
-	public boolean validate(ConvertedInvoice cinvoice, Shop shop) {
-		return validateChilds(cinvoice, shop);
+	public boolean validate(ConvertedInvoice cinvoice, Context context) {
+		return validateChilds(cinvoice, context);
 	}
 
-	protected boolean validateChilds(ConvertedInvoice cinvoice, Shop shop) {
+	protected boolean validateChilds(ConvertedInvoice cinvoice, Context context) {
 		boolean result = true;
 		Iterator<ValidationComponent> i = componentList.iterator();
 		while (i.hasNext() && result) {
-			result = i.next().validate(cinvoice, shop);
+			result = i.next().validate(cinvoice, context);
 		}
 		return result;
 	}

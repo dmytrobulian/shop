@@ -43,8 +43,7 @@ public class DiscountFactory {
 
 	public Discount discountParser(Element element) {
 		Discount temp = new Discount();
-		temp.setDiscountName(element.getElementsByTagName("discountName")
-				.item(0).getTextContent());
+		temp.setDiscountName(element.getElementsByTagName("discountName").item(0).getTextContent());
 		ValidationComponent rootValidation = new ValidationComposite();
 		temp.validation = rootValidation;
 
@@ -52,12 +51,10 @@ public class DiscountFactory {
 		DiscountComposite rootCalculation = new DiscountComposite();
 		temp.condition = rootCalculation;
 
-		Element condition = (Element) element
-				.getElementsByTagName("validation").item(0);
+		Element condition = (Element) element.getElementsByTagName("validation").item(0);
 		parseValidation(condition, rootValidation);
 
-		Element calculation = (Element) element.getElementsByTagName(
-				"discountCondition").item(0);
+		Element calculation = (Element) element.getElementsByTagName("discountCondition").item(0);
 		parseCalculation(calculation, rootCalculation);
 
 		HashMap<String, Object> rootParameter = new HashMap<>();
@@ -74,18 +71,12 @@ public class DiscountFactory {
 			for (int i = 0; i < grouplist.item(0).getChildNodes().getLength(); i++) {
 				ArrayList<String> groupNameList = new ArrayList<String>();
 				if (grouplist.item(0).getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
-					Element group = (Element) grouplist.item(0).getChildNodes()
-							.item(i);
-					String s1 = group.getElementsByTagName("name").item(0)
-							.getTextContent();
+					Element group = (Element) grouplist.item(0).getChildNodes().item(i);
+					String s1 = group.getElementsByTagName("name").item(0).getTextContent();
 					groupNameList.add(s1);
-					int quantity = new Integer(group
-							.getElementsByTagName("quantity").item(0)
-							.getTextContent()).intValue();
-					String amount = group.getElementsByTagName("amount")
-							.item(0).getTextContent();
-					createValidation(parent, "groupname", quantity,
-							groupNameList, new Float(amount));
+					int quantity = new Integer(group.getElementsByTagName("quantity").item(0).getTextContent()).intValue();
+					String amount = group.getElementsByTagName("amount").item(0).getTextContent();
+					createValidation(parent, "groupname", quantity, groupNameList, new Float(amount));
 				}
 			}
 		}
@@ -94,18 +85,12 @@ public class DiscountFactory {
 			for (int i = 0; i < productlist.item(0).getChildNodes().getLength(); i++) {
 				ArrayList<String> productNameList = new ArrayList<String>();
 				if (productlist.item(0).getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
-					Element product = (Element) productlist.item(0)
-							.getChildNodes().item(i);
-					String s1 = product.getElementsByTagName("name").item(0)
-							.getTextContent();
+					Element product = (Element) productlist.item(0).getChildNodes().item(i);
+					String s1 = product.getElementsByTagName("name").item(0).getTextContent();
 					productNameList.add(s1);
-					int quantity = new Integer(product
-							.getElementsByTagName("quantity").item(0)
-							.getTextContent()).intValue();
-					String amount = product.getElementsByTagName("amount")
-							.item(0).getTextContent();
-					createValidation(parent, "productname", quantity,
-							productNameList, new Float(amount));
+					int quantity = new Integer(product.getElementsByTagName("quantity").item(0).getTextContent()).intValue();
+					String amount = product.getElementsByTagName("amount").item(0).getTextContent();
+					createValidation(parent, "productname", quantity, productNameList, new Float(amount));
 				}
 			}
 		}
@@ -114,16 +99,11 @@ public class DiscountFactory {
 			for (int i = 0; i < commonList.item(0).getChildNodes().getLength(); i++) {
 				ArrayList<String> validationList = new ArrayList<String>();
 				if (commonList.item(0).getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
-					Element common = (Element) commonList.item(0)
-							.getChildNodes().item(i);
+					Element common = (Element) commonList.item(0).getChildNodes().item(i);
 					if (common.hasChildNodes()) {
-						Integer quantity = new Integer(common
-								.getElementsByTagName("quantity").item(0)
-								.getTextContent());
-						String amount = common.getElementsByTagName("amount")
-								.item(0).getTextContent();
-						createValidation(parent, "common", quantity,
-								validationList, new Float(amount));
+						Integer quantity = new Integer(common.getElementsByTagName("quantity").item(0).getTextContent());
+						String amount = common.getElementsByTagName("amount").item(0).getTextContent();
+						createValidation(parent, "common", quantity, validationList, new Float(amount));
 					}
 				}
 			}
@@ -136,20 +116,13 @@ public class DiscountFactory {
 			for (int i = 0; i < grouplist.item(0).getChildNodes().getLength(); i++) {
 				ArrayList<String> groupNameList = new ArrayList<String>();
 				if (grouplist.item(0).getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
-					Element group = (Element) grouplist.item(0).getChildNodes()
-							.item(i);
-					String s1 = group.getElementsByTagName("name").item(0)
-							.getTextContent();
+					Element group = (Element) grouplist.item(0).getChildNodes().item(i);
+					String s1 = group.getElementsByTagName("name").item(0).getTextContent();
 					groupNameList.add(s1);
-					int quantity = new Integer(group
-							.getElementsByTagName("quantity").item(0)
-							.getTextContent()).intValue();
-					String amount = group.getElementsByTagName("amount")
-							.item(0).getTextContent();
-					String type = group.getElementsByTagName("type").item(0)
-							.getTextContent();
-					createCalculation(parent, "groupname", quantity,
-							groupNameList, new Float(amount), type);
+					int quantity = new Integer(group.getElementsByTagName("quantity").item(0).getTextContent()).intValue();
+					String amount = group.getElementsByTagName("amount").item(0).getTextContent();
+					String type = group.getElementsByTagName("type").item(0).getTextContent();
+					createCalculation(parent, "groupname", quantity, groupNameList, new Float(amount), type);
 				}
 			}
 		}
@@ -158,20 +131,13 @@ public class DiscountFactory {
 			for (int i = 0; i < productlist.item(0).getChildNodes().getLength(); i++) {
 				ArrayList<String> productNameList = new ArrayList<String>();
 				if (productlist.item(0).getChildNodes().item(i).getNodeType() == Node.ELEMENT_NODE) {
-					Element product = (Element) productlist.item(0)
-							.getChildNodes().item(i);
-					String s1 = product.getElementsByTagName("name").item(0)
-							.getTextContent();
+					Element product = (Element) productlist.item(0).getChildNodes().item(i);
+					String s1 = product.getElementsByTagName("name").item(0).getTextContent();
 					productNameList.add(s1);
-					int quantity = new Integer(product
-							.getElementsByTagName("quantity").item(0)
-							.getTextContent()).intValue();
-					String amount = product.getElementsByTagName("amount")
-							.item(0).getTextContent();
-					String type = product.getElementsByTagName("type").item(0)
-							.getTextContent();
-					createCalculation(parent, "productname", quantity,
-							productNameList, new Float(amount), type);
+					int quantity = new Integer(product.getElementsByTagName("quantity").item(0).getTextContent()).intValue();
+					String amount = product.getElementsByTagName("amount").item(0).getTextContent();
+					String type = product.getElementsByTagName("type").item(0).getTextContent();
+					createCalculation(parent, "productname", quantity, productNameList, new Float(amount), type);
 				}
 			}
 		}
@@ -183,15 +149,10 @@ public class DiscountFactory {
 				if (conditionList.item(j).getNodeType() == Node.ELEMENT_NODE) {
 					if (conditionList.item(j).hasChildNodes()) {
 						Element counter = (Element) conditionList.item(j);
-						Integer quantity = new Integer(counter
-								.getElementsByTagName("quantity").item(0)
-								.getTextContent());
-						String amount = counter.getElementsByTagName("amount")
-								.item(0).getTextContent();
-						String type = counter.getElementsByTagName("type")
-								.item(0).getTextContent();
-						createCalculation(parent, "condition", quantity, null,
-								new Float(amount), type);
+						Integer quantity = new Integer(counter.getElementsByTagName("quantity").item(0).getTextContent());
+						String amount = counter.getElementsByTagName("amount").item(0).getTextContent();
+						String type = counter.getElementsByTagName("type").item(0).getTextContent();
+						createCalculation(parent, "condition", quantity, null, new Float(amount), type);
 					}
 				}
 			}
@@ -199,8 +160,7 @@ public class DiscountFactory {
 
 	}
 
-	private void createValidation(ValidationComponent parent, String name,
-			Integer quantity, ArrayList<String> items, Float amount) {
+	private void createValidation(ValidationComponent parent, String name, Integer quantity, ArrayList<String> items, Float amount) {
 		ValidationComponent validation = null;
 		HashMap<String, Object> parameter = new HashMap<String, Object>();
 		if (amount >= 0) {
@@ -237,8 +197,7 @@ public class DiscountFactory {
 		}
 	}
 
-	private void createCalculation(DiscountComponent root, String name,
-			Integer quantity, ArrayList<String> items, Float amount, String type) {
+	private void createCalculation(DiscountComponent root, String name, Integer quantity, ArrayList<String> items, Float amount, String type) {
 		DiscountComponent counter = null;
 		if (name.equals("productname")) {
 			counter = new DiscountProductName();

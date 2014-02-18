@@ -1,0 +1,13 @@
+ INFO : group=b   product=pen  price=0.2
+ INFO : group=a   product=wine  price=60.5
+ INFO : group=discount bonus   product=fixed discount  price=0.0
+ INFO : group=a   product=beer  price=9.0
+ INFO : group=b   product=paper notes  price=4.0
+ INFO : group=a   product=milk  price=1.2
+ INFO : group=c   product=needle  price=7.2
+ INFO : group=discount bonus   product=percent discount  price=0.0
+ INFO : group=c   product=gloves  price=110.0
+ INFO : group=c   product=turn-screw  price=20.0
+ INFO : group=c   product=hammer  price=50.0
+ INFO : group=d   product=bicycle  price=781.2
+ INFO : group=a   product=sugar  price=7.58

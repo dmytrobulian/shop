@@ -1,0 +1,1 @@
+ INFO : Invoice ready for edit, use command addproduct or removeproduct

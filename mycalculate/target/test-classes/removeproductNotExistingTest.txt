@@ -1,0 +1,5 @@
+ INFO : Invoice ready for edit, use command addproduct or removeproduct
+ INFO : Attempt to remove milk
+ INFO : invoice name=invoice3
+ INFO : 		product name=paper notes quantity=4
+ INFO : 		product name=gloves quantity=2
